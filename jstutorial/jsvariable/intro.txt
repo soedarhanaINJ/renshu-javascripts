@@ -1,0 +1,80 @@
+JavaScript Let
+
+1. The let keyword was introduced in ES6 (2015)
+
+2. Variables defined with let cannot be Redeclared (
+    Redeclaring a variable using the var keyword can impose problems.
+
+    Redeclaring a variable inside a block will also redeclare the variable outside the block:
+    
+    Example:
+        var x = 10;                 // using var
+        // Here x is 10
+
+        {
+        var x = 2;                  // using var
+        // Here x is 2
+        }
+
+        // Here x is 2
+
+    Redeclaring a variable using the let keyword can solve this problem.
+
+    Redeclaring a variable inside a block will not redeclare the variable outside the block:
+
+    Example:
+        let x = 10;                 // using let
+        // Here x is 10
+
+        {
+        let x = 2;                  // using let
+        // Here x is 2
+        }
+
+        // Here x is 10
+)
+
+3. Variables defined with let must be Declared before use
+
+4. Variables defined with let have Block Scope (
+    These two keywords provide Block Scope in JavaScript.
+
+   1] Variables declared inside a { } block cannot be accessed from outside the block:
+
+    Example:
+        {
+            let x = 2;
+        }
+        // x can NOT be used here
+
+    2] Variables declared with the var keyword can NOT have block scope.
+
+        Variables declared inside a { } block can be accessed from outside the block.
+
+        Example: 
+            {
+                var x = 2;
+            }
+            // x CAN be used here
+)
+
+
+=What is Good?
+let and const have block scope.
+
+let and const can not be redeclared.
+
+let and const must be declared before use.
+
+let and const does not bind to this.
+
+let and const are not hoisted.
+
+
+
+=What is Not Good?
+var does not have to be declared.
+
+var is hoisted.
+
+var binds to this.
