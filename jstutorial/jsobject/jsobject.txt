@@ -1,0 +1,27 @@
+In real life, a car is an object.
+
+A car has properties like weight and color, and methods like start and stop:
+All cars have the same properties, but the property values differ from car to car.
+
+All cars have the same methods, but the methods are performed at different times.
+
+*** Object Properties
+
+The name:values pairs in JavaScript objects are called properties:
+
+Property	Property Value
+firstName	John
+lastName	Doe
+age	50
+eyeColor	blue
+
+*** Accessing Object Properties
+
+You can access object properties in two ways:
+
+objectName.propertyName
+
+or
+
+objectName["propertyName"]
+
